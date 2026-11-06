@@ -1,4 +1,4 @@
-import express from "express";
+I'mimport express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import rateLimit from "express-rate-limit";
@@ -47,4 +47,8 @@ app.post("/api/chat", limiter, async (req,res) => {
     res.status(500).json({error:"Sorry, I couldn't answer just now. Please try again shortly."});
   }
 });
-app.listen(process.env.PORT || 10000, () => console.log("Kingdom Spirit AI Assistant server started."));
+const port = process.env.PORT || 10000;
+if (process.env.VERCEL !== "1") {
+  app.listen(port, () => console.log("Kingdom Spirit AI Assistant server started."));
+}
+export default app;
