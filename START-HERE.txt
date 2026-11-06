@@ -1,0 +1,9 @@
+START HERE
+
+1. Extract this ZIP.
+2. Upload every item INSIDE this extracted folder to the root of your GitHub repository.
+3. Confirm GitHub shows index.html and backend/ side by side.
+4. Confirm backend/ contains package.json, server.js, and .env.example.
+5. Use backend as Render Root Directory. Read GITHUB-AND-RENDER-README.txt for all settings.
+
+Never upload your private OpenAI API key. Add it only in Render Environment Variables.
